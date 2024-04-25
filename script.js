@@ -26,12 +26,23 @@ async function acceptance(){
     const keyhole = "c222f701cff59062af75056ce9fde7c25f6faa82a2fc9fed80f2cf1b73842469";
     key = await generateSHA256(key);
     if (key === keyhole) {
-        window.location.href = "../index.html";
+        window.location.href = "../finality/index.html";
     } else {
         alert("Prepare.")
     }
 }
 
+async function finalKey(){
+    var key = document.getElementById("gate").value;
+    const keyhole = "db5e3dbf5cdbba81a01cb8a04cea988c4612764016f89ae979ff832cd1fa0696"
+    key = await generateSHA256(key);
+    console.log(key);
+    if (key === keyhole) {
+        window.location.href = "../db5e3dbf5cdbba81a01cb8a04cea988c4612764016f89ae979ff832cd1fa0696/index.html";
+    } else {
+        alert("Go back and find the question first.")
+    }
+}
 
 async function generateSHA256(str) {
     const encoder = new TextEncoder();

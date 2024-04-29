@@ -27,18 +27,18 @@ async function acceptance(){
     key = await generateSHA256(key);
     if (key === keyhole) {
         window.location.href = "../finality/index.html";
-    } else {
+    } else { 
         alert("Prepare.")
     }
 }
 
 async function finalKey(){
     var key = document.getElementById("gate").value;
-    const keyhole = "db5e3dbf5cdbba81a01cb8a04cea988c4612764016f89ae979ff832cd1fa0696"
+    const keyhole = "013408980555ca2a77fc375be53306a8fe4e801af6bb289bd51d6e80f52e8f65"
     key = await generateSHA256(key);
     console.log(key);
     if (key === keyhole) {
-        window.location.href = "../db5e3dbf5cdbba81a01cb8a04cea988c4612764016f89ae979ff832cd1fa0696/index.html";
+        window.location.href = "../secret/main/index.html";
     } else {
         alert("Go back and find the question first.")
     }
@@ -52,7 +52,6 @@ async function generateSHA256(str) {
     const hashHex = hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
     return hashHex;
 }
-
 
 function letItPour() {
     var asciiArt = document.getElementById("asciiArt");

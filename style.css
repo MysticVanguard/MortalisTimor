@@ -285,3 +285,20 @@ button {
   background-color: red;
   color: white;
 }
+
+.riddle {
+  color: #3a4a5a;
+}
+
+.unreviewed {
+  color: #5a3a3a;
+}
+
+a {
+  color: #8707ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

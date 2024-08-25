@@ -1,9 +1,9 @@
 const trial_info = [
     [
-        "ecdb807053a1fcb25bf15e41af4d1e544a61a652e58abbb1739dfcb3c8d0d5ee",
-        "10ba1e169c7f3389e279c07b3dc19d62dd2954619423467ce05e5eb5dce83625",
-        "ec0eb5c14d9fb5e854ace3ea640f8d27f9e0f3778929287679dc9fd6eeb196e7",
-        "61feb6b300a1d2691d15f8c11f20108dfa829386a14074cc4b30a1a884529e82",
+        "7c03e5da45dd4e750b71cdcf5921ad81e09f67f44650fbe4cce674cfd7cf7cdc",
+        "4e4cbf5fbeca82a45fe826b382aaec249aac38010bc2050c2b278c00bf324977",
+        "ed534f8d278b5ad722f03cb1fa8bcf690faaf34b1924fad0c8c3363a03461d45",
+        "62fefbbd97373163dd8f6c4fa1cbc0805f089e8e34e63add516f625e7e3de89d",
     ],
     [
         "You have not accepted. Look past reality.",
@@ -73,7 +73,6 @@ async function generateComplexHash(input) {
     const hashHex = Array.from(new Uint8Array(data)).map(b => b.toString(16).padStart(2, '0')).join('');
     return hashHex;
 }
-
 
 function letItPour() {
     var asciiArt = document.getElementById("asciiArt");

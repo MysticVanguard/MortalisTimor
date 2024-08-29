@@ -6,9 +6,9 @@ const trial_info = [
         "62fefbbd97373163dd8f6c4fa1cbc0805f089e8e34e63add516f625e7e3de89d",
     ],
     [
-        "You have not accepted. Look past reality.",
-        "Four words. Two senses needed.",
-        "Learn from the past. Embrace their words.",
+        "You have not accepted. Really look past reality.",
+        "It's four words. Don't look, just. Do.",
+        "Learn from the past. Embrace their words",//.html
         "Repeat the question? Answer"
     ],
     [
